@@ -1,0 +1,90 @@
+html{
+    box-sizing: border-box;
+}
+#container{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 13pt;
+}
+body{
+    margin: 0;
+}
+
+/* Start index.html file style */
+#container{
+    width: 100%;
+    height: 620px;
+}
+#left_sidebar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: rgb(46, 46, 94);
+    box-shadow: 1px 2px 3px #ccc;
+    position: fixed;
+}
+#left_sidebar ul{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#left_sidebar ul span{
+    font-size: 16pt;
+    display: block;
+    color: #fff;
+    padding: 30px 0px 4px 50px;
+    font-weight: bold;
+}
+#left_sidebar ul a{
+    width: 100%;
+    height: 20px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 25px;
+}
+#left_sidebar ul li{
+    width: 82%;
+    height: 20px;
+    list-style-type: none;
+    padding: 0px 0px 8px 50px;
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#left_sidebar ul li:hover{
+    background: #fff;
+    color: rgb(83, 42, 136);
+    
+    
+}
+
+
+#main_content{
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+#main_content h1{
+    text-align: center;
+    background: #474785;
+    margin: 0;
+    color: #fff;
+    padding: 40px 0px;
+}
+
+#syntax{
+    width: 80%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+/* End of Index.html file */
