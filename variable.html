@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP All Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        
+
+
+    </style>
+    <div id="container">
+        <div id="left_sidebar">
+            
+            <ul>
+                <span>PHP Concepts</span>
+                <a href="/php all concepts">
+                    <li>
+                        PHP Introduction
+                    </li>
+                </a>
+                <a href="syntax.html">
+                    <li>
+                        PHP Syntax
+                    </li>
+                </a>
+                <a href="comments.html">
+                    <li>
+                        PHP Comments
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        PHP Variable
+                    </li>
+                </a>
+                <a href="echo.html">
+                    <li>
+                        PHP Echo/Print
+                    </li>
+                </a>
+                <a href="data.html">
+                    <li>
+                        PHP Data Types
+                    </li>
+                </a>
+                <a href="condition.html">
+                    <li>
+                        PHP Condition
+                    </li>
+                </a>
+                <a href="loop.html">
+                    <li>
+                        PHP Loops
+                    </li>
+                </a>
+                <a href="function.html">
+                    <li>
+                    PHP Function
+                    </li>
+                </a>         
+                <a href="array.html">
+                    <li>
+                    PHP Array
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <style>
+            
+        </style>
+        <div id="main_content">
+            <h1>PHP CONCEPTS</h1>
+            <div id="syntax">
+                <h2>PHP Variables</h2>
+                <h3>Creating (Declaring) PHP Variables</h3>
+                <p>In PHP, a variable starts with the $ sign, followed by the name of the variable:</p>
+                <p>After the execution of the statements above, the variable $txt will hold the value Hello world!, the variable $x will hold the value 5, and the variable $y will hold the value 10.5.</p>
+                <p><strong>Note:</strong> When you assign a text value to a variable, put quotes around the value.</p>
+                <p><strong>Note:</strong> Unlike other programming languages, PHP has no command for declaring a variable. It is created the moment you first assign a value to it.</p>
+                <h2>PHP Variables</h2>
+                <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+                <ul>
+                    <p>Rules for PHP variables:</p>
+                    <li>A variable starts with the $ sign, followed by the name of the variable</li>
+                    <li>A variable name must start with a letter or the underscore character</li>
+                    <li>A variable name cannot start with a number</li>
+                    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9,and _)</li>
+                    <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+                </ul>
+                <h3>Output Variables</h3>
+                <p>The PHP echo statement is often used to output data to the screen.</p>
+                <p><strong>Note:</strong> You will learn more about the echo statement and how to output data to the screen in the next chapter.</p>
+                <h3>PHP is a Loosely Typed Language</h3>
+                <p>PHP automatically associates a data type to the variable, depending on its value. Since the data types are not set in a strict sense, you can do things like adding a string to an integer without causing an error.</p>
+                <p>In PHP 7, type declarations were added. This gives an option to specify the data type expected when declaring a function, and by enabling the strict requirement, it will throw a "Fatal Error" on a type mismatch.</p>
+                <h2>PHP Variables Scope</h2>
+                <p>In PHP, variables can be declared anywhere in the script.</p>
+                <p>The scope of a variable is the part of the script where the variable can be referenced/used.</p>
+                <ul>
+                    <p>PHP has three different variable scopes:</p>
+                    <li>local</li>
+                    <li>global</li>
+                    <li>static</li>
+                </ul>
+                <h3>Global and Local Scope</h3>
+                <p>A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:</p>
+                <p>A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function:</p>
+                <p>We can have local variables with the same name in different functions, because local variables are only recognized by the function in which they are declared.</p>
+                <h2>PHP The global Keyword</h2>
+                <p>The global keyword is used to access a global variable from within a function.</p>
+                <p>To do this, use the global keyword before the variables (inside the function):</p>
+                <p>PHP also stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable. This array is also accessible from within functions and can be used to update global variables directly.</p>
+                <h3>PHP The static Keyword</h3>
+                <p>Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted. We need it for a further job.</p>
+                <p>To do this, use the static keyword when you first declare the variable</p>
+                <p>Then, each time the function is called, that variable will still have the information it contained from the last time the function was called.</p>
+                <p><strong>Note:</strong> The variable is still local to the function.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
