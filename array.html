@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP All Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        
+
+
+    </style>
+    <div id="container">
+        <div id="left_sidebar">
+            
+            <ul>
+                <span>PHP Concepts</span>
+                <a href="/php all concepts">
+                    <li>
+                        PHP Introduction
+                    </li>
+                </a>
+                <a href="syntax.html">
+                    <li>
+                        PHP Syntax
+                    </li>
+                </a>
+                <a href="comments.html">
+                    <li>
+                        PHP Comments
+                    </li>
+                </a>
+                <a href="variable.html">
+                    <li>
+                        PHP Variable
+                    </li>
+                </a>
+                <a href="echo.html">
+                    <li>
+                        PHP Echo/Print
+                    </li>
+                </a>
+                <a href="data.html">
+                    <li>
+                        PHP Data Types
+                    </li>
+                </a>
+                <a href="condition.html">
+                    <li>
+                        PHP Condition
+                    </li>
+                </a>
+                <a href="loop.html">
+                    <li>
+                        PHP Loops
+                    </li>
+                </a>
+                <a href="function.html">
+                    <li>
+                    PHP Function
+                    </li>
+                </a>         
+                <a href="#">
+                    <li>
+                    PHP Array
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <style>
+            
+        </style>
+        <div id="main_content">
+            <h1>PHP CONCEPTS</h1>
+            <div id="syntax">
+                <h2>PHP Arrays</h2>
+                <p>An array stores multiple values in one single variable:</p>
+                <h3>What is an Array?</h3>
+                <p>An array is a special variable, which can hold more than one value at a time.</p>
+                <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+                <code>
+                    <pre>
+                        $cars1 = "Volvo";
+                        $cars2 = "BMW";
+                        $cars3 = "Toyota"; 
+                    </pre>
+                </code>
+                <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+                <p>The solution is to create an array!</p>
+                <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+                <h3>Create an Array in PHP</h3>
+                <p>In PHP, the array() function is used to create an array:</p>
+                <code>array();</code>
+                <ul>
+                    <p>In PHP, there are three types of arrays:</p>
+                    <li><strong>Indexed arrays</strong> - Arrays with a numeric index</li>
+                    <li><strong>Associative arrays</strong> - Arrays with named keys</li>
+                    <li><strong>Multidimensional arrays</strong>  - Arrays containing one or more arrays</li>
+                </ul>
+                <h3>Get The Length of an Array - The count() Function</h3>
+                <p>The count() function is used to return the length (the number of elements) of an array</p>
+                <h3>PHP Indexed Arrays</h3>
+                <p>There are two ways to create indexed arrays:</p>
+                <p>The index can be assigned automatically (index always starts at 0), like this</p>
+                <code>$cars = array("Volvo", "BMW", "Toyota");</code>
+                <p>or the index can be assigned manually:</p>
+                <code>
+                    <pre>
+                        $cars[0] = "Volvo";
+                        $cars[1] = "BMW";
+                        $cars[2] = "Toyota"; 
+                    </pre>
+                </code>
+                <h3>Loop Through an Indexed Array</h3>
+                <p>To loop through and print all the values of an indexed array, you could use a for loop, like this</p>
+                <h3>PHP Associative Arrays</h3>
+                <p>Associative arrays are arrays that use named keys that you assign to them.</p>
+                <p>There are two ways to create an associative array: </p>
+                <code>$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");</code>
+                <p>or:</p>
+                <code>
+                    <pre>
+                        $age['Peter'] = "35";
+                        $age['Ben'] = "37";
+                        $age['Joe'] = "43"; 
+                    </pre>
+                </code>
+                <p>The named keys can then be used in a script</p>
+                <h3>Loop Through an Associative Array</h3>
+                <p>To loop through and print all the values of an associative array, you could use a foreach loop,</p>
+                <h3>PHP Multidimensional Arrays</h3>
+                <p>A multidimensional array is an array containing one or more arrays.</p>
+                <p>PHP supports multidimensional arrays that are two, three, four, five, or more levels deep. However, arrays more than three levels deep are hard to manage for most people.</p>
+                <ul>
+                    <strong>The dimension of an array indicates the number of indices you need to select an element.</strong>
+                    <li>For a two-dimensional array you need two indices to select an element</li>
+                    <li>For a three-dimensional array you need three indices to select an element</li>
+                </ul>
+                <h3>PHP - Two-dimensional Arrays</h3>
+                <p>A two-dimensional array is an array of arrays (a three-dimensional array is an array of arrays of arrays).</p>
+                <code>
+                    <pre>
+                        $cars = array (
+                        array("Volvo",22,18),
+                        array("BMW",15,13),
+                        array("Saab",5,2),
+                        array("Land Rover",17,15)
+                        );
+                    </pre>
+                </code>
+                <p>Now the two-dimensional $cars array contains four arrays, and it has two indices: row and column.</p>
+                <p>To get access to the elements of the $cars array we must point to the two indices (row and column)</p>
+                <h3>PHP Sorting Arrays</h3>
+                <p>The elements in an array can be sorted in alphabetical or numerical order, descending or ascending.</p>
+                <h3>PHP - Sort Functions For Arrays</h3>
+                <ul>
+                    <p>In this chapter, we will go through the following PHP array sort functions:</p>
+                    <li>sort() - sort arrays in ascending order</li>
+                    <li>rsort() - sort arrays in descending order</li>
+                    <li>asort() - sort associative arrays in ascending order, according to the value</li>
+                    <li>ksort() - sort associative arrays in ascending order, according to the key</li>
+                    <li>arsort() - sort associative arrays in descending order, according to the value</li>
+                    <li>krsort() - sort associative arrays in descending order, according to the key</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
