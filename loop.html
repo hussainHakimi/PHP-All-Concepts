@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP All Concepts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        
+
+
+    </style>
+    <div id="container">
+        <div id="left_sidebar">
+            
+            <ul>
+                <span>PHP Concepts</span>
+                <a href="/php all concepts">
+                    <li>
+                        PHP Introduction
+                    </li>
+                </a>
+                <a href="syntax.html">
+                    <li>
+                        PHP Syntax
+                    </li>
+                </a>
+                <a href="comments.html">
+                    <li>
+                        PHP Comments
+                    </li>
+                </a>
+                <a href="variable.html">
+                    <li>
+                        PHP Variable
+                    </li>
+                </a>
+                <a href="echo.html">
+                    <li>
+                        PHP Echo/Print
+                    </li>
+                </a>
+                <a href="data.html">
+                    <li>
+                        PHP Data Types
+                    </li>
+                </a>
+                <a href="condition.html">
+                    <li>
+                        PHP Condition
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        PHP Loops
+                    </li>
+                </a>
+                <a href="function.html">
+                    <li>
+                    PHP Function
+                    </li>
+                </a>         
+                <a href="array.html">
+                    <li>
+                    PHP Array
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <style>
+            
+        </style>
+        <div id="main_content">
+            <h1>PHP CONCEPTS</h1>
+            <div id="syntax">
+                <h2>PHP Loops</h2>
+                <p>In the following chapters you will learn how to repeat code by using loops in PHP.</p>
+                <p>Often when you write code, you want the same block of code to run over and over again a certain number of times. So, instead of adding several almost equal code-lines in a script, we can use loops.</p>
+                <p>Loops are used to execute the same block of code again and again, as long as a certain condition is true.</p>
+                <ul>
+                    <p>In PHP, we have the following loop types:</p>
+                    <li>while - loops through a block of code as long as the specified condition is true</li>
+                    <li>do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true</li>
+                    <li>for - loops through a block of code a specified number of times</li>
+                    <li>foreach - loops through a block of code for each element in an array</li>
+                </ul>
+                <h3>PHP while Loop</h3>
+                <p>The while loop - Loops through a block of code as long as the specified condition is true.</p>
+                <p>The while loop executes a block of code as long as the specified condition is true.</p>
+                <h3>Syntax</h3>
+                <code>
+                    <pre>
+                        while (condition is true) {
+                            code to be executed;
+                          } 
+                    </pre>
+                </code>
+                <h3>PHP do while Loop</h3>
+                <p>The do...while loop - Loops through a block of code once, and then repeats the loop as long as the specified condition is true.</p>
+                <h3>Syntax</h3>
+                <code>
+                    <pre>
+                        do {
+                            code to be executed;
+                          } while (condition is true); 
+                    </pre>
+                </code>
+                <p><strong>Note:</strong> In a do...while loop the condition is tested AFTER executing the statements within the loop. This means that the do...while loop will execute its statements at least once, even if the condition is false. See example below.</p>
+                <h3>PHP for Loop</h3>
+                <p>The for loop - Loops through a block of code a specified number of times.</p>
+                <p>The for loop is used when you know in advance how many times the script should run.</p>
+                <h3>Syntax</h3>
+                <code>
+                    <pre>
+                        for (init counter; test counter; increment counter) {
+                            code to be executed for each iteration;
+                          } 
+                    </pre>
+                </code>
+                <ul>
+                    <h4>Parameters:</h4>
+                    <li>init counter: Initialize the loop counter value</li>
+                    <li>test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.</li>
+                    <li>increment counter: Increases the loop counter value</li>
+                </ul>
+                <h3>PHP foreach Loop</h3>
+                <p>e foreach loop - Loops through a block of code for each element in an array.</p>
+                <p>The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.</p>
+                <h3>Syntax</h3>
+                <code>
+                    <pre>
+                        foreach ($array as $value) {
+                            code to be executed;
+                          }
+                    </pre>
+                </code>
+                <p>For every loop iteration, the value of the current array element is assigned to $value and the array pointer is moved by one, until it reaches the last array element.</p>
+                <h3>PHP Break and Continue</h3>
+                <h4>PHP Break</h4>
+                <p>You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.</p>
+                <p>The break statement can also be used to jump out of a loop.</p>
+                <h4>PHP Continue</h4>
+                <p>The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.</p>
+                <p>We can also use break and continue in while loops</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
